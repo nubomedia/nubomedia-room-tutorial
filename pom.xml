@@ -38,11 +38,9 @@
 	</developers>
 
 	<properties>
-		<!-- Kurento -->
-		<kurento-datachannelexample.version>6.6.0</kurento-datachannelexample.version>
-
 		<!-- Nubomedia -->
 		<nubomedia-media-client.version>6.6.0</nubomedia-media-client.version>
+		<msdatademograph.version>1.0.3</msdatademograph.version>
 
 		<!-- WebJars -->
 		<jquery-ui.version>1.11.4</jquery-ui.version>
@@ -64,17 +62,17 @@
 			<groupId>org.kurento</groupId>
 			<artifactId>kurento-room-client-js</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.kurento.module</groupId>
-			<artifactId>datachannelexample</artifactId>
-			<version>${kurento-datachannelexample.version}</version>
-		</dependency>
 
 		<!-- Nubomedia -->
 		<dependency>
 			<groupId>de.fhg.fokus.nubomedia</groupId>
 			<artifactId>nubomedia-media-client</artifactId>
 			<version>${nubomedia-media-client.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>fi.vtt.nubomedia.msdata</groupId>
+			<artifactId>msdatademograph</artifactId>
+			<version>${msdatademograph.version}</version>
 		</dependency>
 
 		<!-- WebJars -->

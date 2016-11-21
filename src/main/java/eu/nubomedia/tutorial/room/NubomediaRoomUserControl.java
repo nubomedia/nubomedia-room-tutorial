@@ -22,7 +22,7 @@ import org.kurento.client.FaceOverlayFilter;
 import org.kurento.client.MediaElement;
 import org.kurento.jsonrpc.Transaction;
 import org.kurento.jsonrpc.message.Request;
-import org.kurento.module.datachannelexample.KmsShowData;
+import org.kurento.module.msdata.KmsMsData;
 import org.kurento.room.NotificationRoomManager;
 import org.kurento.room.api.pojo.ParticipantRequest;
 import org.kurento.room.rpc.JsonRpcUserControl;
@@ -73,10 +73,10 @@ public class NubomediaRoomUserControl extends JsonRpcUserControl {
         log.info("Applying KMS Data Channel module to session {}", pid);
         try {
           // Media logic
-          KmsShowData kmsShowData = new KmsShowData.Builder(roomManager.getPipeline(pid)).build();
-          roomManager.addMediaElement(pid, kmsShowData);
+          KmsMsData kmsMsData = new KmsMsData.Builder(roomManager.getPipeline(pid)).build();
+          roomManager.addMediaElement(pid, kmsMsData);
         } catch (Exception e) {
-          log.warn("Unable to add kms datachannels example filter to session {}", pid, e);
+          log.warn("Unable to add msdatademopaasgraph filter to session {}", pid, e);
         }
       }
     }
